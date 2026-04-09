@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elara Voss — Visual Artist</title>
+
+    <!-- ===== Google Fonts ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== Stylesheet ===== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+       HEADER — Artist name + tagline
+  ============================================================ -->
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="header-label">Portfolio</p>
+        <h1 class="artist-name">Montaser-gamal</h1>
+        <p class="artist-tagline">
+          Light, shadow &amp; the space between emotion and form.
+        </p>
+      </div>
+
+      <!-- Decorative grain overlay -->
+      <div class="header-grain"></div>
+    </header>
+
+    <!-- ============================================================
+       NAVIGATION — Sticky top nav
+  ============================================================ -->
+    <nav class="site-nav" id="site-nav">
+      <div class="nav-inner">
+        <!-- Logo / name (visible when scrolled) -->
+        <a href="#home" class="nav-logo">Montaser-gamal</a>
+
+        <!-- Nav links -->
+        <ul class="nav-links">
+          <li>
+            <a href="#home" class="nav-link active" data-section="home">Home</a>
+          </li>
+          <li>
+            <a href="#gallery" class="nav-link" data-section="gallery"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-section="about">About</a>
+          </li>
+          <li>
+            <button
+              id="theme-toggle"
+              class="theme-toggle"
+              aria-label="Toggle theme"
+            >
+              <svg
+                class="icon-light"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="icon-dark"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Mobile hamburger -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+    <main>
+      <!-- ── HOME / HERO SECTION ──────────────────────────────── -->
+      <section id="home" class="section section-home">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Est. 2015 · Berlin, Germany</span>
+          <h2 class="hero-heading">Where colour<br /><em>breathes</em></h2>
+          <p class="hero-body">
+            Mixed-media works exploring memory, landscape, and the quiet tension
+            between stillness and movement. Each piece is a conversation with
+            light.
+          </p>
+          <a href="#gallery" class="btn-primary">View Gallery</a>
+        </div>
+
+        <!-- Floating decorative shapes -->
+        <div class="hero-deco hero-deco--1"></div>
+        <div class="hero-deco hero-deco--2"></div>
+      </section>
+
+      <!-- ── GALLERY SECTION ──────────────────────────────────── -->
+      <section id="gallery" class="section section-gallery">
+        <div class="section-header">
+          <span class="section-label">Works</span>
+          <h2 class="section-title">Selected <em>Gallery</em></h2>
+          <p class="section-subtitle">
+            Click any piece to view it in full detail.
+          </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Each .gallery-item: add real image URLs in src="" to customise -->
+
+          <div class="gallery-item gallery-item--wide" data-index="0">
+            <img
+              src="imgs/1.jpg"
+              alt="Abstract oil painting — Amber Drift"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Amber Drift</p>
+              <p class="gallery-medium">Oil on canvas · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="1">
+            <img
+              src="imgs/2.jpg"
+              alt="Abstract watercolour — Quiet Hour"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Quiet Hour</p>
+              <p class="gallery-medium">Watercolour · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="2">
+            <img
+              src="imgs/3.jpg"
+              alt="Digital mixed media — Nocturne I"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Nocturne I</p>
+              <p class="gallery-medium">Mixed media · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="3">
+            <img
+              src="imgs/4.jpg"
+              alt="Photography — Threshold"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Threshold</p>
+              <p class="gallery-medium">Photography · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--tall" data-index="4">
+            <img src="imgs/5.jpg" alt="Acrylic — Velvet Shore" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Velvet Shore</p>
+              <p class="gallery-medium">Acrylic on board · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="5">
+            <img src="imgs/6.jpg" alt="Ink wash — Ghost Light" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Ghost Light</p>
+              <p class="gallery-medium">Ink wash · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="6">
+            <img
+              src="imgs/7.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-index="7">
+            <img
+              src="imgs/8.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide" data-index="8">
+            <img src="imgs/9.jpg" alt="Oil — First Light" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-title">First Light</p>
+              <p class="gallery-medium">Oil on linen · 2024</p>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-index="0">
+            <img
+              src="imgs/10.jpg"
+              alt="Abstract oil painting — Amber Drift"
+              src="imgs/11.jpg"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Amber Drift</p>
+              <p class="gallery-medium">Oil on canvas · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="1">
+            <img
+              src="imgs/12.jpg"
+              alt="Abstract watercolour — Quiet Hour"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Quiet Hour</p>
+              <p class="gallery-medium">Watercolour · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="2">
+            <img
+              src="imgs/13.jpg"
+              alt="Digital mixed media — Nocturne I"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Nocturne I</p>
+              <p class="gallery-medium">Mixed media · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="3">
+            <img
+              src="imgs/14.jpg"
+              alt="Photography — Threshold"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Threshold</p>
+              <p class="gallery-medium">Photography · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--tall" data-index="4">
+            <img
+              src="imgs/15.jpg"
+              alt="Acrylic — Velvet Shore"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Velvet Shore</p>
+              <p class="gallery-medium">Acrylic on board · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="5">
+            <img
+              src="imgs/16.jpg"
+              alt="Ink wash — Ghost Light"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Ghost Light</p>
+              <p class="gallery-medium">Ink wash · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="6">
+            <img
+              src="imgs/17.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-index="7">
+            <img
+              src="imgs/18.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide" data-index="8">
+            <img src="imgs/19.jpg" alt="Oil — First Light" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-title">First Light</p>
+              <p class="gallery-medium">Oil on linen · 2024</p>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-index="0">
+            <img
+              src="imgs/20.jpg"
+              alt="Abstract oil painting — Amber Drift"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Amber Drift</p>
+              <p class="gallery-medium">Oil on canvas · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="1">
+            <img
+              src="imgs/21.jpg"
+              alt="Abstract watercolour — Quiet Hour"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Quiet Hour</p>
+              <p class="gallery-medium">Watercolour · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="2">
+            <img
+              src="imgs/23.jpg"
+              alt="Digital mixed media — Nocturne I"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Nocturne I</p>
+              <p class="gallery-medium">Mixed media · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="3">
+            <img
+              src="imgs/24.jpg"
+              alt="Photography — Threshold"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Threshold</p>
+              <p class="gallery-medium">Photography · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--tall" data-index="4">
+            <img
+              src="imgs/25.jpg"
+              alt="Acrylic — Velvet Shore"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Velvet Shore</p>
+              <p class="gallery-medium">Acrylic on board · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="5">
+            <img
+              src="imgs/26.jpg"
+              alt="Ink wash — Ghost Light"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Ghost Light</p>
+              <p class="gallery-medium">Ink wash · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="6">
+            <img
+              src="imgs/27.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-index="7">
+            <img
+              src="imgs/28.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide" data-index="8">
+            <img src="imgs/29.jpg" alt="Oil — First Light" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-title">First Light</p>
+              <p class="gallery-medium">Oil on linen · 2024</p>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-index="0">
+            <img
+              src="imgs/30.jpg"
+              alt="Abstract oil painting — Amber Drift"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Amber Drift</p>
+              <p class="gallery-medium">Oil on canvas · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="1">
+            <img
+              src="imgs/31.jpg"
+              alt="Abstract watercolour — Quiet Hour"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Quiet Hour</p>
+              <p class="gallery-medium">Watercolour · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="2">
+            <img
+              src="imgs/32.jpg"
+              alt="Digital mixed media — Nocturne I"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Nocturne I</p>
+              <p class="gallery-medium">Mixed media · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="3">
+            <img
+              src="imgs/33.jpg"
+              alt="Photography — Threshold"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Threshold</p>
+              <p class="gallery-medium">Photography · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--tall" data-index="4">
+            <img
+              src="imgs/34.jpg"
+              alt="Acrylic — Velvet Shore"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Velvet Shore</p>
+              <p class="gallery-medium">Acrylic on board · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="5">
+            <img
+              src="imgs/35.jpg"
+              alt="Ink wash — Ghost Light"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Ghost Light</p>
+              <p class="gallery-medium">Ink wash · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="6">
+            <img
+              src="imgs/1.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-index="7">
+            <img
+              src="imgs/36.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide" data-index="8">
+            <img src="imgs/37.jpg" alt="Oil — First Light" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-title">First Light</p>
+              <p class="gallery-medium">Oil on linen · 2024</p>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-index="0">
+            <img
+              src="imgs/38.jpg"
+              alt="Abstract oil painting — Amber Drift"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Amber Drift</p>
+              <p class="gallery-medium">Oil on canvas · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="1">
+            <img
+              src="imgs/40.jpg"
+              alt="Abstract watercolour — Quiet Hour"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Quiet Hour</p>
+              <p class="gallery-medium">Watercolour · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="2">
+            <img
+              src="imgs/41.jpg"
+              alt="Digital mixed media — Nocturne I"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Nocturne I</p>
+              <p class="gallery-medium">Mixed media · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="3">
+            <img
+              src="imgs/42.jpg"
+              alt="Photography — Threshold"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Threshold</p>
+              <p class="gallery-medium">Photography · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--tall" data-index="4">
+            <img
+              src="imgs/43.jpg"
+              alt="Acrylic — Velvet Shore"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Velvet Shore</p>
+              <p class="gallery-medium">Acrylic on board · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="5">
+            <img
+              src="imgs/44.jpg"
+              alt="Ink wash — Ghost Light"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Ghost Light</p>
+              <p class="gallery-medium">Ink wash · 2022</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="6">
+            <img
+              src="imgs/45.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-index="7">
+            <img
+              src="imgs/49.jpg"
+              alt="Digital — Blue Meridian"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Blue Meridian</p>
+              <p class="gallery-medium">Digital · 2023</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide" data-index="8">
+            <img src="imgs/47.jpg" alt="Oil — First Light" loading="lazy" />
+            <div class="gallery-overlay">
+              <p class="gallery-title">First Light</p>
+              <p class="gallery-medium">Oil on linen · 2024</p>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-index="0">
+            <img
+              src="imgs/48.jpg"
+              alt="Abstract oil painting — Amber Drift"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Amber Drift</p>
+              <p class="gallery-medium">Oil on canvas · 2024</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="1">
+            <img
+              src="imgs/49.jpg"
+              alt="Abstract watercolour — Quiet Hour"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <p class="gallery-title">Quiet Hour</p>
+              <p class="gallery-medium">Watercolour · 2023</p>
+            </div>
+          </div>
+        </div>
+        <!-- /gallery-grid -->
+      </section>
+
+      <!-- ── ABOUT SECTION ────────────────────────────────────── -->
+      <section id="about" class="section section-about">
+        <div class="about-inner">
+          <!-- Artist photo -->
+          <div class="about-image-wrap">
+            <img
+              src="/imgs/22.jpg"
+              alt="Portrait of Elara Voss"
+              class="about-photo"
+            />
+            <div class="about-image-accent"></div>
+          </div>
+
+          <!-- Artist bio -->
+          <div class="about-text">
+            <span class="section-label">About</span>
+            <h2 class="section-title">The <em>Artist</em></h2>
+            <p>
+              <em>Montaser Gamal</em> is a <em>multidisciplinary</em> artist
+              based in <em>Egypt</em> , working in oil painting, mixed media,
+              and digital art. His work explores how memory distorts the natural
+              landscape, and how the natural landscape distorts memory.
+            </p>
+            <p>
+              He often blends abstraction with familiar forms, creating a
+              tension between reality and imagination. His work invites viewers
+              to question what they see and reflect on their own personal
+              memories. Through layers of texture and shifting perspectives, his
+              work embodies the instability of perception.
+            </p>
+
+            <!-- Stats row -->
+            <ul class="about-stats">
+              <li><strong>50+</strong><span>Exhibitions</span></li>
+              <li><strong>12</strong><span>Awards</span></li>
+              <li><strong>9</strong><span>Years active</span></li>
+            </ul>
+
+            <a href="https://wa.me/c/201001105479" class="btn-primary">
+              Get in touch
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- /main -->
+
+    <!-- ============================================================
+       FOOTER — Social links + copyright
+  ============================================================ -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-name">Montaser-gamal</p>
+        <p class="footer-copy">
+          All works © 2024 montaser. All rights reserved.
+        </p>
+
+        <!-- Social icons — update href="#" to real profile URLs -->
+        <ul class="social-links">
+          <!-- Facebook -->
+          <li>
+            <a
+              href="https://t.me/MontasserArt"
+              class="social-link"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="imgs/icons/telegram.svg"
+                class="c-white"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <!-- Instagram -->
+          <li>
+            <a
+              href="https://www.instagram.com/httpst.memontasserart?igsh=MWk5aTY3MGVscnJrYg=="
+              class="social-link"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="imgs/icons/instagram.svg"
+                class="c-white"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <!-- Twitter / X -->
+          <li>
+            <a
+              href="https://wa.me/c/201001105479"
+              class="social-link"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="/imgs/icons/whatsapp.svg" class="c-white" alt="">
+            </a>
+          </li>
+
+          <!-- Behance -->
+      
+        </ul>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       LIGHTBOX — Popup image viewer (controlled by JS)
+  ============================================================ -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image preview"
+    >
+      <button
+        class="lightbox-close"
+        id="lightbox-close"
+        aria-label="Close preview"
+      >
+        &times;
+      </button>
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+      <!-- Prev / Next arrows -->
+      <button
+        class="lightbox-arrow lightbox-arrow--prev"
+        id="lb-prev"
+        aria-label="Previous"
+      >
+        &#8592;
+      </button>
+      <button
+        class="lightbox-arrow lightbox-arrow--next"
+        id="lb-next"
+        aria-label="Next"
+      >
+        &#8594;
+      </button>
+    </div>
+
+    <!-- ===== JavaScript ===== -->
+    <script src="script.js"></script>
+  </body>
+</html>
